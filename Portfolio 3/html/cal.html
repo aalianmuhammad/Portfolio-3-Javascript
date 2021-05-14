@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Aalian Muhammad</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="../css/body.css">
+            <link rel="stylesheet" href="../css/navbar.css">
+            \<link rel="stylesheet" href="../css/cal.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </head>
+        <body class="achtergrond">
+            <!-- navbar Start -->
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                    <a class="navbar-brand" href="../html/home.html">Portfolio</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/home.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/cv.html">CV</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../html/projects.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PROJECTS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="../html/projects.html">Main</a>
+                                    <a class="dropdown-item" href="../projecten/Portfolio HTML & CSS 1/index.html">Portfolio HTML & CSS</a>
+                                    <a class="dropdown-item" href="../projecten/Bloembinderij Bootstrap/bloembinderij.html">Bootstrap De Tulp</a>
+                                    <a class="dropdown-item" href="../projecten/Bootstrap Triton/main.html">Bootstrap Triton</a>
+                                    <a class="dropdown-item" href="../projecten/Bootstrap Portfolio/mainpage.html">Portfolio Bootstrap</a>
+                                    <a class="dropdown-item" href="#">Javascript Theme Switcher</a>
+                                    <a class="dropdown-item" href="#">Javascript Calculater</a>
+                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contact.html">SOCIALIZE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link acitve" href="../html/cal.html">CALCULATER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/ts.html">Theme Switcher</a>
+                            </li>
+                        </ul>
+                    </div>              
+                </nav>
+            </div>
+            <!-- navbar End -->
+            <br><br><br><br><br>
+
+            <div class="jumbotron jumbotron-fluid" style="background-color: rgb(255, 255, 255)">
+                <div class="container">
+                </div>
+            </div>
+            <div id="bg"></div>
+
+
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview">
+        </form>
+
+        <table>
+            <tr>
+                <td><input class="button1" type="button" value="AC" onclick="clean()"></td>
+                <td><input  class="button1" type="button" value="<"onclick="back()"></td>
+                <td><input  class="button1" type="button" value="%"onclick="insert('%' )"></td>
+                <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="number" type="button" value="7" onclick="insert(7)"></td>
+                <td><input class="number" type="button" value="8" onclick="insert(8)"></td>
+                <td><input class="number" type="button" value="9" onclick="insert(9)"></td>
+                <td><input class="button" type="button" value="x" onclick="insert('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="number" type="button" value="4" onclick="insert(4)"></td>
+                <td><input class="number" type="button" value="5" onclick="insert(5)"></td>
+                <td><input class="number" type="button" value="6" onclick="insert(6)"></td>
+                <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="number" type="button" value="1" onclick="insert(1)"></td>
+                <td><input class="number" type="button" value="2" onclick="insert(2)"></td>
+                <td><input class="number" type="button" value="3" onclick="insert(3)"></td>
+                <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="zero" style="width:110;" type="button" value="0" onclick="insert(0)"></td>
+                <td><input class="number" type="button" value="." onclick="insert('.')"></td>
+                <td><input class="button" type="button" value="=" onclick="equal()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bgbox"></div>
+
+            
+            <script src="../js/cal.js"></script>
+        </body>
+    </html>

@@ -1,0 +1,20 @@
+* {
+    font-family: 'Itim', cursive;
+}
+
+.achtergrond {
+    background: #5433FF;
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+
+}
+
+.intro {
+    color: snow;
+    font-size: larger;
+    margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
